@@ -1,0 +1,53 @@
+/*
+ * okaModal Styles
+ * 
+ * @author Guilherme Henrique Oka Marques
+ * @version: 1.0
+*/
+
+/* WRAPPER */
+	div.okaModalWrapper {
+		width: inherit;
+		height: inherit;
+		top: 0px;
+		left: 0px;
+		position: fixed;
+		z-index: 10;
+		overflow: auto;
+		text-align: center;
+		display: none;
+		overflow: hidden;
+
+		background-color: rgba(0, 0, 0, .2);
+		background-image: url('../../client/images/UI/backgrounds/modalBackground.png');
+		background-repeat: repeat;
+	}
+	/* CONTENT */
+		div.okaModalWrapper > div.okaModalContent{
+			margin: 50px auto;
+			display: inline-block;
+			text-align: left;
+			padding: 10px;
+			background-color: #fff;
+			box-shadow: 1px 1px 10px #666;
+			font-family: verdana;
+			color: #666;
+			font-size: 12px;
+			border-radius: 10px;
+		}
+		/* CLOSE BUTTON */
+			div.okaModalWrapper > div.okaModalContent > span.okaModalCloseButton{
+				top: 10px;
+				right: 15px;
+				width: 30px;
+				height: 30px;
+				position: fixed;
+				background-image: url('../../client/images/UI/icons/modalCloseButton.png');
+				background-repeat: no-repeat;
+				background-size: 22px 22px;
+				background-position: center center;
+				cursor: pointer;
+			}
+				div.okaModalWrapper > div.okaModalContent > span.okaModalCloseButton:hover{
+					background-image: url('../../client/images/UI/icons/modalCloseButtonHover.png');
+				}
